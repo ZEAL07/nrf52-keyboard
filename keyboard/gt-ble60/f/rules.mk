@@ -19,3 +19,7 @@ USB_6KRO_ENABLE = yes     # 启用USB的六键无冲功能
 #ACTIONMAP_ENABLE =yes
 
 CONFIG_GPIO_AS_PINRESET = yes	# 启用RESET PIN
+ifneq (yes,$(strip $(THREE_LED_STATUS)))
+	SRC_FILES += $(COMMON_ROOT)/user_evt.c
+	ONE_RGB_LED = yes
+endif
