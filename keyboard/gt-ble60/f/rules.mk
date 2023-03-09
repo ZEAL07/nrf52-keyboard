@@ -17,3 +17,5 @@ USB_6KRO_ENABLE = yes     # 启用USB的六键无冲功能
 #ROTARY_ENCODER = yes # 启用编码器
 # SSD1306_OLED = yes
 #ACTIONMAP_ENABLE =yes
+
+CONFIG_GPIO_AS_PINRESET = yes	# 启用RESET PIN
