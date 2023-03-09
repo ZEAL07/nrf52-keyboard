@@ -23,3 +23,7 @@ ifneq (yes,$(strip $(THREE_LED_STATUS)))
 	SRC_FILES += $(COMMON_ROOT)/user_evt.c
 	ONE_RGB_LED = yes
 endif
+all: default ch554
+
+include $(APP_PROJ_DIR)/kbd.mk
+include $(USB_SOURCE_DIR)/usb.mk
